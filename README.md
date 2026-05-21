@@ -18,7 +18,7 @@ playlist = []                 # Lista donde se guardan canciones
 # ======================================================
 
 def mostrar_menu():                                     # Función menú
-d
+
     print("\n======= PLAYLIST SPOTIFY =======")   # Título
     print("1. Agregar canción")                  # Opción 1
     print("2. Mostrar playlist")                 # Opción 2
