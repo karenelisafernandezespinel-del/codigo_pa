@@ -70,4 +70,59 @@ def agregar_cancion():                           # Función agregar
 
     except ValueError:                               # Error si escribe texto
         print("Error: la duración debe ser un número")
+# ======================================================
+# FUNCIÓN PARA MOSTRAR PLAYLIST
+# ======================================================
+
+def mostrar_playlist():                              # Función mostrar
+
+    if len(playlist) == 0:                           # Verifica lista vacía
+        print("La playlist está vacía")              # Mensaje
+
+    else:                                            # Si hay canciones
+
+        print("\n===== PLAYLIST =====")              # Título
+
+        # Big O = O(n)
+        for cancion in playlist:                     # Recorre lista
+            print("----------------------")     # Línea
+            print("Código:", cancion["codigo"])      # Código
+            print("Canción:", cancion["nombre"])     # Nombre
+            print("Artista:", cancion["artista"])    # Artista
+            print("Agregada por:", cancion["amigo"]) # Amigo
+            print("Duración:", cancion["duracion"])  # Duración
+            print("Fecha:", cancion["fecha"])        # Fecha
+
+
+# ======================================================
+# FUNCIÓN PARA BUSCAR CANCIÓN
+# ======================================================
+
+def buscar_cancion():                                # Función buscar
+
+    try:                                             # Intenta ejecutar
+
+        codigo_buscar = int(input("Ingrese código: ")) # Pide código
+        encontrado = False                           # Variable lógica
+
+        # Big O = O(n)
+        for cancion in playlist:                     # Recorre lista
+
+            if cancion["codigo"] == codigo_buscar:   # Compara código
+
+                print("\nCanción encontrada")       # Mensaje
+                print("Nombre:", cancion["nombre"])  # Nombre
+                print("Artista:", cancion["artista"]) # Artista
+                print("Agregada por:", cancion["amigo"]) # Amigo
+
+                encontrado = True                    # Cambia variable
+                break                                # Rompe ciclo
+
+        if encontrado == False:                      # Si no encuentra
+            print("Canción no encontrada")           # Mensaje
+
+    except ValueError:                               # Error si escribe letras
+
+        print("Error: debe ingresar un número")
+
 
