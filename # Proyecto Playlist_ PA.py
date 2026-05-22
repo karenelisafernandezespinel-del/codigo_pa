@@ -74,7 +74,7 @@ def agregar_cancion():                           # Función agregar
 # FUNCIÓN PARA MOSTRAR PLAYLIST
 # ======================================================
 
-def mostrar_playlist():                              # Función mostrar
+def mostrar_playlist(lista):                              # Función mostrar
 
     if len(playlist) == 0:                           # Verifica lista vacía
         print("La playlist está vacía")              # Mensaje
@@ -129,7 +129,7 @@ def buscar_cancion():                                # Función buscar
 # FUNCIÓN ESTADÍSTICAS
 # ======================================================
 
-def estadisticas():                                  # Función estadísticas
+def estadisticas(lista):                                  # Función estadísticas
 
     cantidad = len(playlist)                         # Cuenta canciones
     total = calcular_duracion(playlist)              # Llama función
