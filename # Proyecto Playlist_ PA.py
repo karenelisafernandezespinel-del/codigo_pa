@@ -135,7 +135,7 @@ def buscar_cancion():                                # Función buscar
 # FUNCIÓN ESTADÍSTICAS
 # ======================================================
 
-def estadisticas(lista):                                  # Función estadísticas
+def estadisticas():                                  # Función estadísticas
 
     cantidad = len(playlist)                         # Cuenta canciones
     total = calcular_duracion(playlist)              # Llama función
