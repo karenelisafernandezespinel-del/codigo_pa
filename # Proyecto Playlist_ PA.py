@@ -1,5 +1,11 @@
 # Proyecto Playlist_ PA
 # PROGRAMA: PLAYLIST ENTRE AMIGOS - SPOTIFY
+# REALIZADO POR:
+     # Danna Valentina Saavedra Morales
+     # Karen Elisa Fernandez Espinel
+     # Danna Camila Gonzales Gutiérrez
+     # Miguel Ángel Piragauta Sanchez
+     # Paula Andrea Castañeda Quintero
 
 # ---------------- LIBRERÍAS ----------------
 
