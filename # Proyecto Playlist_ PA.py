@@ -80,7 +80,7 @@ def agregar_cancion():                           # Función agregar
 # FUNCIÓN PARA MOSTRAR PLAYLIST
 # ======================================================
 
-def mostrar_playlist(lista):                              # Función mostrar
+def mostrar_playlist():                              # Función mostrar
 
     if len(playlist) == 0:                           # Verifica lista vacía
         print("La playlist está vacía")              # Mensaje
