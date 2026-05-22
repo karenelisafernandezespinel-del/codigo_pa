@@ -125,4 +125,34 @@ def buscar_cancion():                                # Función buscar
 
         print("Error: debe ingresar un número")
 
+# ======================================================
+# FUNCIÓN ESTADÍSTICAS
+# ======================================================
+
+def estadisticas():                                  # Función estadísticas
+
+    cantidad = len(playlist)                         # Cuenta canciones
+    total = calcular_duracion(playlist)              # Llama función
+
+    print("Cantidad de canciones:", cantidad)        # Muestra cantidad
+    print("Duración total:", total)                  # Muestra total
+
+    if cantidad > 0:                                 # Verifica cantidad
+        promedio = total / cantidad                  # Calcula promedio
+        print("Promedio:", promedio)                 # Muestra promedio
+        raiz = math.sqrt(promedio)                   # Calcula raíz
+        print("Raíz del promedio:", raiz)            # Muestra raíz
+
+        if promedio >= 300:                          # Condición
+            print("Playlist con canciones de duración larga")   # Mensaje
+
+        elif promedio >= 180:                        # Otra condición
+            print("Playlist con canciones de duración media") # Mensaje
+
+        else:                                        # Si no cumple
+            print("Playlist con canciones de duración corta")   # Mensaje
+
+    else:                                            # Si no hay canciones
+        print("No hay canciones registradas")        # Mensaje
+
 
