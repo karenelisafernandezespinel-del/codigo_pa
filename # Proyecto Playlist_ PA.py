@@ -154,5 +154,53 @@ def estadisticas():                                  # Función estadísticas
 
     else:                                            # Si no hay canciones
         print("No hay canciones registradas")        # Mensaje
+        
+# ======================================================
+# FUNCIÓN MAIN
+# Función principal del programa
+# ======================================================
+
+def main():                                          # Función principal
+
+    opcion = 0                                       # Variable opción
+
+    # Ciclo while
+    while opcion != 5:                               # Mientras no sea 5
+        mostrar_menu()                               # Llama menú
+
+        try:                                         # Intenta ejecutar
+
+            opcion = int(input("Seleccione opción: ")) # Pide opción
+
+            # MATCH CASE
+            match opcion:                            # Evalúa opción
+
+                case 1:                              # Caso 1
+                    agregar_cancion()                # Llama función
+
+                case 2:                              # Caso 2
+                    mostrar_playlist()               # Llama función
+
+                case 3:                              # Caso 3
+                    buscar_cancion()                # Llama función
+
+                case 4:                              # Caso 4
+                    estadisticas()                   # Llama función
+
+                case 5:                              # Caso 5
+                    print("Cerrando Spotify...")     # Mensaje
+
+                case _:                              # Caso por defecto
+                    print("Opción incorrecta")       # Mensaje
+
+        except ValueError:                           # Captura error
+
+            print("Error: debe ingresar números")
+
+# ======================================================
+# LLAMADO DE LA FUNCIÓN MAIN
+# ======================================================
+
+main()                                               # Ejecuta programa
 
 
