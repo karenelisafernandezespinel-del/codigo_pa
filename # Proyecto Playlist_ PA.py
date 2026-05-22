@@ -36,7 +36,7 @@ def mostrar_menu():                                     # Función menú
 # Retorna duración total
 # ======================================================
 
-def calcular_duracion(lista):                    # Función con parámetro
+def calcular_duracion():                    # Función con parámetro
 
     total = 0                                    # Variable acumuladora
 
